@@ -1,0 +1,7 @@
+echo "# ref_ui_simple_nxjs_ts_materualui" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M devbr
+git remote add origin https://github.com/BlockchainDeveloper009/ref_ui_simple_nxjs_ts_materualui.git
+git push -u origin devbr
