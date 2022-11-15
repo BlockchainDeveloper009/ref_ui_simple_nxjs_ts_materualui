@@ -1,0 +1,111 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* linear gradient for background */
+  --linear-gradient-low-transparency: linear-gradient(
+    45deg,
+    rgba(25, 118, 210, 0.7) 0%,
+    rgba(94, 76, 192, 0.7) 50%,
+    rgba(156, 39, 176, 0.7) 100%
+  );
+
+  /* linear gradient for background */
+  --linear-gradient-high-transparency: linear-gradient(
+    45deg,
+    rgba(25, 118, 210, 0.3) 0%,
+    rgba(94, 76, 192, 0.3) 50%,
+    rgba(156, 39, 176, 0.3) 100%
+  );
+
+  /* linear gradient for text */
+  --text-linear-gradient: linear-gradient(
+    45deg,
+    rgba(66, 165, 245, 1) 0%,
+    rgba(133, 131, 220, 1) 50%,
+    rgba(228, 69, 255, 1) 100%
+  );
+}
+
+/* Global Styles */
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.button {
+  transition: all 0.2s linear;
+}
+
+.button:hover {
+  color: white;
+  background: var(--linear-gradient-low-transparency);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  background: var(--linear-gradient-low-transparency);
+}
+
+.logo {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.navLink {
+  padding: 1.5rem 2rem;
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.navLink:hover, .navLinkSelected {
+  background: var(--linear-gradient-low-transparency);
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  font-weight: bold;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  background: var(--text-linear-gradient);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* control with Material UI configs? */
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
