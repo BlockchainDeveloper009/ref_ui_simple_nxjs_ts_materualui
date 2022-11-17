@@ -69,9 +69,11 @@ const Header = () => {
           <a className="navLink">About Us</a>
         </Link>
 
-        <Link href="/About" legacyBehavior>
+        <Link href="/Team" legacyBehavior>
           <a className="navLink">Our Team</a>
         </Link>
+
+        
       </div>
     </nav>
   );
