@@ -2,6 +2,12 @@ import Image from 'next/image'
 
 import {pet1,pet,p2} from '../public/Image/albums'
 
+const dr1Profile  ="This is our fun and knowledgeable receptionist, Courtney. " + 
+"She is originally from Louisiana and currently resides in Kingwood with her fiance and 5 kids. "+
+"She also has one adorable dog named Costa. Courtney has worked in the veterinary field for 10+years working "+
+"everything from kennel to assistant to reception. In her spare time,she enjoys fishing, disc golf, and wandering "+
+" the town playing Pokemon Go! Courtney is excited to visit with our pets and their respective owners during every visit to our clinic."
+
 const Team = () => {
     return (
        <div>
@@ -21,14 +27,21 @@ const Team = () => {
         <section id="2">
         {/* <img alt="Image of a suggested globe in flat gradient layers." src="./pet1.jpg"></img> */}
         <Image  width="200" height="200" src={pet1} alt=""></Image>
-        <span>I will fill some details for tseting and a good dev is working everyday towards the goal</span>
+        
+        </section>
+        <section>
+        <p>I will fill some details for tseting and a good dev is working everyday towards the goal</p>
         </section>
 
         <section id="3">
         {/* <img alt="Image of a suggested globe in flat gradient layers." src="./pet1.jpg"></img> */}
         <Image  width="200" height="200" src={p2} alt=""/>
         </section>
-
+        <section>
+        <div>
+            <p>{dr1Profile}</p>
+        </div>
+        </section>
       </main>
        </div>
     )

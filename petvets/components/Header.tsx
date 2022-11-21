@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import Menu from './Menu';
+import { Button } from '@mui/material';
 
 type MenuOptions = Array<{ name: string; link: string }>;
 type MenuItem = { title: string; options: MenuOptions };
 type MenuItemList = Array<MenuItem>;
 const petsLogo = "BondBank Dapp"
+const primaryBttText = "Login";
 // Example menu items for dropdown menu
 //https://vcahospitals.com/animal-medical-center-pasadena/everyday-care/your-visit/client-forms
 
@@ -73,7 +75,9 @@ const Header = () => {
           <a className="navLink">Our Team</a>
         </Link>
 
-        
+        <Button id="primaryBttText" variant="contained"
+        size="medium" href='/BookAppointment'
+        >{primaryBttText}</Button>
       </div>
     </nav>
   );

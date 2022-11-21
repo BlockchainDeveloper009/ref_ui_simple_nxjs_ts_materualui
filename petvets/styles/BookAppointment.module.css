@@ -1,0 +1,7 @@
+.formField {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 2.2rem;
+  }

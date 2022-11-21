@@ -1,7 +1,13 @@
 import Image from 'next/image'
 
 import {pet1,pet,p2} from '../public/Image/albums'
-
+const img1Desc = 'para para para para para para para para para para para para para para '+
+        'para para para para para para para para para para para para para para '+
+    'para para para para para para para para para para para para para para '+
+    'para para para para para para para para para para para para para para '+
+    'para para para para para para para para para para para para para para '+
+    'para para para para para para para para para para para para para para '+
+            'para para para para para para para para para para para para para para para ';
 const BodyPage = () => {
     return (
        <div>
@@ -21,7 +27,7 @@ const BodyPage = () => {
         <section id="2">
         {/* <img alt="Image of a suggested globe in flat gradient layers." src="./pet1.jpg"></img> */}
         <Image  width="800" height="600" src={pet1} alt=""></Image>
-        <span>I will fill some details for tseting and a good dev is working everyday towards the goal</span>
+        <span>{img1Desc}</span>
         </section>
 
         <section id="3">
