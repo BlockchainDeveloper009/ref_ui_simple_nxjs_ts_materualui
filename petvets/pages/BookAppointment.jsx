@@ -2,9 +2,11 @@
 //import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import { DateTimePicker } from '@mui/x-date-pickers';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { FormControl, InputLabel, Input, FormHelperText, FormLabel, FormControlLabel } from '@mui/material';
+import { Box, Typography, Container, FormControl, InputLabel, Input, FormHelperText, FormLabel, FormControlLabel } from '@mui/material';
 import { Select, MenuItem, FormGroup, Checkbox } from '@mui/material';
 import { RadioGroup, Radio, Popover } from '@mui/material';
+
+
 //import { styles } from '../styles/global.css';
 import { styles } from '../styles/BookAppointment.module.css';
 let age = '35';
@@ -20,7 +22,7 @@ const BookAppointment = () => {
         <FormLabel id="demo-radio-buttons-group-label">Client Type</FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="female"
+          defaultValue="I am a New client"
           name="radio-buttons-group"
         >
           <FormControlLabel value="newClient" control={<Radio />} label="I am a New client" />
@@ -31,6 +33,7 @@ const BookAppointment = () => {
         <FormGroup>
           <FormLabel id="demo-radio-buttons-group-label">Visit Type</FormLabel>
           <FormControlLabel id="VisitType" control={<Checkbox defaultChecked />} label="Vaccine" />
+          <FormControlLabel id="clientType" control={<Checkbox defaultChecked />} label="General Checkup" />
           <FormControlLabel id="clientType" control={<Checkbox defaultChecked />} label="General Checkup" />
         </FormGroup>
 
@@ -52,7 +55,7 @@ const BookAppointment = () => {
         <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
         <br>
         </br>
-        <InputLabel htmlFor="my-input">Mobile Number address</InputLabel>
+        <InputLabel htmlFor="my-input">Mobile Number</InputLabel>
         <Input id="my-input" aria-describedby="my-helper-text" />
         <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
 
