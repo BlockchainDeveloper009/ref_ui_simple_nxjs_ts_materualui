@@ -10,19 +10,19 @@ export default function Login() {
     const validateForm = (formData: any) => {
         let formDirty = false;
         console.log('form data is ',formData);
-        if(formData.firstName ||  !formData.firstName.length){
+        if(!formData.firstName ||  !formData.firstName.length){
             setfirstNameError("firstName is required");
             formDirty=true;
         }else{
             setfirstNameError("");
         }
-        if(!formDirty && (formData.lastName || !formData.lastName.length)){
+        if(!formDirty && (!formData.lastName || !formData.lastName.length)){
             setlastNameError("lastName is required");
             formDirty=true;
         }else{
             setlastNameError("");
         }
-        if(!formDirty && (formData.email ||  !formData.email.length)){
+        if(!formDirty && (!formData.email ||  !formData.email.length)){
             setEmailError("Email is required");
             formDirty=true;
         }else{
@@ -80,7 +80,8 @@ export default function Login() {
                             {...register('email')}
                             autoComplete="email"
                             helperText={emailError}
-                        />
+                            type="email"
+                    />
                 </Grid>
                 <Grid item xs={12}>
                       <FormControlLabel 

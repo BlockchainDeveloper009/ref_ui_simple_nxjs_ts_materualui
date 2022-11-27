@@ -3,6 +3,9 @@ import Menu from './Menu';
 import { Button } from '@mui/material';
 import Router from 'next/router';
 import OfaXray from './Services/OfaXray';
+import { FaMapMarker } from "react-icons/fa"; 
+import About from "../pages/About";
+import ContactUs  from "../pages/ContactUs";
 
 type MenuOptions = Array<{ name: string; link: any }>;
 type MenuItem = { title: string; options: MenuOptions };
@@ -76,21 +79,34 @@ const Header = () => {
 
         <Menu menuName="Everyday Care" menuItems={menuItemsEverydayCare} />
 
+        <Link href="/Team" legacyBehavior>
+          <a className="navLink">Our Team</a>
+        </Link>
+
+
         <Link href="/About" legacyBehavior>
           <a className="navLink">About Us</a>
         </Link>
 
-        <Link href="/Team" legacyBehavior>
-          <a className="navLink">Our Team</a>
+       
+        <Link href="/ContactUs" legacyBehavior>
+          <a className="navLink">Contact Us</a>
         </Link>
+
         <Link href={Directions} legacyBehavior>
-          <a className="navLink" target="_blank">{DirectionsText}</a>
+            
+          <a className="navLink" target="_blank"><FaMapMarker />{DirectionsText}</a>
         </Link>
 
         <Button id="primaryBttText" variant="contained"
         size="medium" href='/BookAppointment'
+        >Book</Button>
+        <br></br>
+         <Button id="primaryBttText" variant="contained"
+        size="medium" href='/Login'
         >{primaryBttText}</Button>
       </div>
+      
     </nav>
   );
 };
