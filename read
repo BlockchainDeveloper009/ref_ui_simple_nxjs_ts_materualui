@@ -5,3 +5,24 @@ git commit -m "first commit"
 git branch -M devbr
 git remote add origin https://github.com/BlockchainDeveloper009/ref_ui_simple_nxjs_ts_materualui.git
 git push -u origin devbr
+
+wrenches:
+https://www.youtube.com/watch?v=qwaaL6cgvX0
+
+### Todo's
+[useEffect,useMemo  Hooks - detail](https://www.youtube.com/watch?v=QQYeipc_cik)
+[validate React forms without a library](https://www.youtube.com/watch?v=tIdNeoHniEY)
+[send Emails with SendGrid & Nextjs ](https://www.youtube.com/watch?v=QrVYLLpoyMw)
+[Registration and User Activation Email with React/Next.js & Node](https://www.youtube.com/watch?v=53uJ01cXDx0)
+
+[Patrick collins - 32hrs](https://www.youtube.com/watch?v=gyMwXuJrbJQ)
+[Discrete Staking Rewards](https://www.youtube.com/watch?v=_I1n1WbRz7o&list=RDCMUCJWh7F3AFyQ_x01VKzr9eyA&index=16)
+[Ethereum tokens - ERC1155](https://www.youtube.com/watch?v=Mnv4rNcTumA&list=PLbbtODcOYIoGOvl0KH57_nfvEKOYV6qdT&index=9)
+[hOWto get Started in Defi - EatTheBlocks](https://www.youtube.com/watch?v=a_5zinHmjpQ)
+[freeCodeCamp - sol, blockchain in python ](https://www.youtube.com/watch?v=M576WGiDBdQ)
+[Dapp University - Defi - Digital Bank ](https://www.youtube.com/watch?v=CgXQC4dbGUE)
+[Dapp University - Defi - Ethereum Defi Programming Tutorial for Begineers](https://www.youtube.com/watch?v=CmOjb_FpxcM)
+defi developer tutorial
+
+[EatTheBlocks - Group multiple transactions into a single one in Solidity](https://www.youtube.com/watch?v=IVq3gR2L5Iw&list=PLbbtODcOYIoElmspdx53f-F6MSyMNtBL7)
+[Gnosis - Conditional Token Tutorial](https://www.youtube.com/watch?v=uZNWq07Y4Ag)
